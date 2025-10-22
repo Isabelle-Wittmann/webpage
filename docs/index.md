@@ -1,12 +1,9 @@
 <link rel="stylesheet" href="assets/custom.css">
 
-<header style="text-align:center; padding:1.5rem 0;">
-  <img src="{{ '/assets/Logo_NeuCo_blue.png' | relative_url }}" alt="NeuCo-Bench Logo" style="height:70px; width:auto;"/>
-  <h1 style="margin:0.5rem 0 0 0;">NeuCo-Bench</h1>
-  <p style="margin:0; color:#3458a8;">Benchmarking compressed embeddings for Earth Observation</p>
-</header>
-
-# NeuCo-Bench
+<h1 style="display:flex; align-items:center; justify-content:center; gap:10px;">
+  <img src="assets/Logo_NeuCo_blue.png" alt="NeuCo-Bench Logo" style="height:45px; width:auto; vertical-align:middle;">
+  NeuCo-Bench
+</h1>
 
 **Licence**: Apache-2.0
 
@@ -154,4 +151,5 @@ We invite the community to collaborate and appreciate contributions, including b
 - Incorporate additional downstream task and metrics
 - Extension to further input modalities
 
-Check out [CONTRIBUTING.md](.github/CONTRIBUTING.md).
+Check out [CONTRIBUTING.md](See [CONTRIBUTING.md](https://github.com/embed2scale/NeuCo-Bench/blob/main/CONTRIBUTING.md)
+).
