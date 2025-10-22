@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/Logo_NeuCo_blue.png" alt="NeuCo-Bench Logo" width="220"/>
+</p>
+
 # NeuCo-Bench
 
 **Licence**: Apache-2.0
