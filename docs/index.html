@@ -20,6 +20,73 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/foundation.min.css">
     <script src="assets/scripts/navbar.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        /* === Custom styling tweaks === */
+        body {
+            font-family: "Arial", sans-serif;
+            color: #222;
+            line-height: 1.7;
+            background-color: #fff;
+        }
+
+        /* Header block */
+        #first-content {
+            background-color: #f7f8fa; /* lighter neutral grey */
+            text-align: center;
+            padding: 3rem 1rem 2rem 1rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+
+        #first-content h1.title {
+            font-size: 2.4rem;
+            color: #3458a8;
+            margin: 0;
+        }
+
+        #first-content .abstract {
+            max-width: 700px;
+            margin: 1rem auto;
+            font-size: 1.05rem;
+        }
+
+        #first-content a {
+            color: #3458a8;
+            text-decoration: none;
+        }
+
+        /* Main content blocks */
+        .container.blog.main {
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+            padding: 0 2rem;
+        }
+
+        .container.blog.main h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #3458a8; /* brand blue headings */
+            margin-bottom: 1rem;
+        }
+
+        .container.blog.main .text {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #f7f8fa;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        footer a {
+            color: #3458a8;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,7 +96,7 @@
                 <div>
                     <img src="assets/Logo_NeuCo_blue.png" 
                      alt="NeuCo-Bench Logo" 
-                     style="height:75px;width:auto;margin-bottom:0.5rem;">
+                     style="height:110px;width:auto;margin-bottom:1rem;"
 
                     <h1 class="title" style="margin:0;">NeuCo-Bench</h1>
 
@@ -60,11 +127,13 @@
         <p class="text">
             In <b>Earth Observation (EO)</b>, pipelines process massive volumes of image data for analytical tasks. 
             Traditional compression methods target pixel-level reconstruction, while Foundation Model (FM) research 
-            often overlooks embedding size. <b>NeuCo-Bench</b> bridges this gap by enforcing strict size constraints 
+            often overlooks embedding size. 
+            <b>NeuCo-Bench</b> bridges this gap by enforcing strict size constraints 
             and evaluating compressed embeddings directly on real-world EO tasks.
         </p>
     
         <p class="text">
+
             Originally developed for the 
             <a href="https://ieee-grss.org/earthvision2025/">CVPR 2025 EARTHVISION Challenge</a>, 
             NeuCo-Bench now provides an open, reproducible framework for local benchmarking and comparison of 
@@ -83,6 +152,7 @@
         </ul>
     
         <p class="text">
+
             To run an evaluation:
         </p>
     
