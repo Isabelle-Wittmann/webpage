@@ -21,12 +21,16 @@
     <script src="assets/scripts/navbar.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
+        html {
+            font-size: 16px; /* base for rem scaling */
+        }
         /* === Custom styling tweaks === */
         body {
             font-family: "Arial", sans-serif;
             color: #222;
             line-height: 1.7;
             background-color: #fff;
+            font-size: 1rem; 
         }
 
         /* Header block */
@@ -38,7 +42,7 @@
         }
 
         #first-content h1.title {
-            font-size: 3.2rem;            /* increased from 2.4rem */
+            font-size: 3rem;            /* increased from 2.4rem */
             font-weight: 700;           /* bold */
             color: #3458a8;             /* your blue */
             margin: 0.5rem 0;
@@ -124,7 +128,7 @@
                            text-decoration: none;
                            transition: background-color 0.3s ease;
                        ">
-                       <i class="fa-solid fa-code" style="margin-right: 8px; font-size: 1rem;"></i>
+                       <i class="fa-solid fa-code"></i>
                        GitHub Repo
                     </a>
                 </div>
