@@ -2,7 +2,7 @@
 
 **Licence**: Apache-2.0
 
-*Originally developed to evaluate challenge submissions for the 2025 EARTHVISION Challenge at CVPR ([competition details](https://www.grss-ieee.org/events/earthvision-2025/?tab=challenge)), NeuCo-Bench is now released for local benchmarking and evaluation.*
+*Originally developed to evaluate challenge submissions for the 2025 EARTHVISION Challenge at CVPR ([competition details](https://www.grss-ieee.org/events/earthvision-2025/?tab=challenge)), NeuCo-Bench is now released for local benchmarking and evaluation. Additional tech details in [http://arxiv.org/html/2510.17914](http://arxiv.org/html/2510.17914)*
 
 NeuCo-Bench is a **benchmarking framework** designed to evaluate how effectively compressed embeddings preserve information for downstream tasks.
 
