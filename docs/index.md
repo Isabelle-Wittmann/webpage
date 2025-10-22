@@ -1,8 +1,10 @@
 <link rel="stylesheet" href="assets/custom.css">
 
-<p align="center">
-  <img src="assets/Logo_NeuCo_blue.png" alt="NeuCo-Bench Logo" width="220"/>
-</p>
+<header style="text-align:center; padding:1.5rem 0;">
+  <img src="{{ '/assets/Logo_NeuCo_blue.png' | relative_url }}" alt="NeuCo-Bench Logo" style="height:70px; width:auto;"/>
+  <h1 style="margin:0.5rem 0 0 0;">NeuCo-Bench</h1>
+  <p style="margin:0; color:#3458a8;">Benchmarking compressed embeddings for Earth Observation</p>
+</header>
 
 # NeuCo-Bench
 
