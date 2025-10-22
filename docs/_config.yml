@@ -1,5 +1,0 @@
-theme: jekyll-theme-minimal
-title: NeuCo-Bench
-description: Benchmarking compressed embeddings for Earth Observation
-include:
-  - _includes/header.html
