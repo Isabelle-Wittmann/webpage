@@ -27,27 +27,29 @@
         <div class="blog-title no-cover">
             <div class="blog-intro">
                 <div>
-                    <h1 class="title" style="display:flex;align-items:center;gap:12px;">
-                        <img src="assets/Logo_NeuCo_blue.png" alt="NeuCo-Bench Logo" style="height:55px;width:auto;vertical-align:middle;">
-                        NeuCo-Bench
-                    </h1>
-                    <p class="abstract">
-                        Originally developed to evaluate challenge submissions for the 
-                        <a href="https://ieee-grss.org/earthvision2025/">2025 EARTHVISION Challenge at CVPR</a>, 
-                        NeuCo-Bench is now released for local benchmarking and evaluation. 
-                        Additional technical details are available at 
-                        <a href="http://arxiv.org/html/2510.17914">arxiv.org/html/2510.17914</a>.
-                    </p>
+                    <img src="assets/Logo_NeuCo_blue.png" 
+                     alt="NeuCo-Bench Logo" 
+                     style="height:75px;width:auto;margin-bottom:0.5rem;">
+
+                    <h1 class="title" style="margin:0;">NeuCo-Bench</h1>
+
                     <p class="abstract">
                         NeuCo-Bench is a benchmarking framework designed to evaluate how effectively 
                         <b>compressed embeddings</b> preserve information for downstream tasks.
+                    </p>
+                    <p class="abstract">
+                        Originally developed to evaluate challenge submissions for the 
+                        <a href="https://www.grss-ieee.org/events/earthvision-2025/?tab=challenge">2025 EARTHVISION Challenge at CVPR</a>, 
+                        NeuCo-Bench is now released for local benchmarking and evaluation. 
+                        Additional technical details in 
+                        <a href="http://arxiv.org/html/2510.17914"> NeuCo-Bench Preprint</a>.
                     </p>
                 </div>
 
                 <div class="info">
                     <a href="https://github.com/embed2scale/NeuCo-Bench" class="button icon"
                        style="background-color:rgba(255,255,255,0.25);margin-bottom:0;">
-                       Source Code <i class="fa-solid fa-code"></i></a>
+                       Github Repo <i class="fa-solid fa-code"></i></a>
                 </div>
             </div>
         </div>
@@ -56,24 +58,41 @@
     <div class="container blog main first" id="blog-main">
         <h1>Overview</h1>
         <p class="text">
-            In domains like <b>Earth Observation (EO)</b>, pipelines typically handle large volumes of image data used 
-            primarily for analytical tasks. Traditional compression techniques focus on pixel-level reconstruction, 
-            while Foundation Model (FM) research does not explicitly consider embedding size. 
-            NeuCo-Bench addresses this gap by enforcing strict size constraints and evaluating embeddings directly 
-            on real-world EO tasks.
+            In <b>Earth Observation (EO)</b>, pipelines process massive volumes of image data for analytical tasks. 
+            Traditional compression methods target pixel-level reconstruction, while Foundation Model (FM) research 
+            often overlooks embedding size. <b>NeuCo-Bench</b> bridges this gap by enforcing strict size constraints 
+            and evaluating compressed embeddings directly on real-world EO tasks.
         </p>
-
+    
         <p class="text">
-            NeuCo-Bench provides an initial set of EO tasks and invites community contributions of additional tasks 
-            and datasets from EO and other domains.
+            Originally developed for the 
+            <a href="https://ieee-grss.org/earthvision2025/">CVPR 2025 EARTHVISION Challenge</a>, 
+            NeuCo-Bench now provides an open, reproducible framework for local benchmarking and comparison of 
+            embedding-based methods. It includes a growing set of EO downstream tasks and welcomes community 
+            contributions of additional datasets, metrics, and compression techniques.
         </p>
-
+    </div>
+    
+    <div class="container blog main">
+        <h1>Key Features</h1>
+    
+        <ul class="text" style="list-style-type:disc; margin-left:2rem;">
+            <li><b>Model-agnostic:</b> Evaluates any fixed-size embedding (e.g. 1024-dim vectors) for fair comparison across compression and representation learning methods.</li>
+            <li><b>Task-driven:</b> Uses linear probes across diverse EO tasks such as land-cover estimation, cloud detection, and biomass prediction.</li>
+            <li><b>Consistent metrics:</b> Incorporates signal-to-noise scores and dynamic rank aggregation for unified benchmarking.</li>
+        </ul>
+    
         <p class="text">
-            <a href="https://github.com/embed2scale/NeuCo-Bench/blob/main/README.md">Documentation</a> ·
-            <a href="https://github.com/embed2scale/NeuCo-Bench/blob/main/CONTRIBUTING.md">Contributing</a> ·
-            <a href="http://arxiv.org/html/2510.17914" target="_blank">arXiv Paper</a> ·
-            <a href="https://github.com/embed2scale/NeuCo-Bench/blob/main/LICENSE">Apache-2.0 License</a>
+            To run an evaluation:
         </p>
+    
+        <ol class="text" style="margin-left:2rem;">
+            <li>Download the <b><a href="https://huggingface.co/datasets/embed2scale/SSL4EO-S12-downstream" target="_blank">SSL4EO-S12-downstream</a></b> dataset from Hugging Face.</li>
+            <li>Encode images into fixed-size embeddings and save them as CSV files.</li>
+            <li>Run NeuCo-Bench locally to generate task metrics and leaderboards — see the 
+                <a href="https://github.com/embed2scale/NeuCo-Bench#quickstart" target="_blank">Quickstart section</a> 
+                on GitHub for detailed setup instructions.</li>
+        </ol>
     </div>
 
 
